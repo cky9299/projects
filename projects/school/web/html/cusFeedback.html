@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+<head>
+   <meta charset="utf-8" />
+   <link rel="stylesheet" href="../css/base.css">
+   <link rel="stylesheet" href="../css/cusFeedback.css" >
+   <title>Customer feedback</title>
+
+</head>
+<body>
+   <div id="main">
+      <header>
+         <div id="middle"><a href="homepage.html"><img src="../picture/logo.png" alt="logo"></a></div>
+         <div id="right">
+            <a href="login.html"><img src="../picture/cart.png" alt="cart" id="second"></a>
+            <a href="cusFeedback.html"><img src="../picture/customer_feedback.png" alt="Customer feedback" id="most"></a>
+         </div>
+      </header>
+   <nav id="laptop">
+      <ul>
+         <li><a href="login.html">Game Catalogue</a></li>
+         <li><a href="encyclopedia.html">Game Encyclopedia</a></li>
+         <li><a href="update.html">Latest News</a></li>
+         <li><a href="about_us.html">About Us</a></li>
+         <li><a href="faq.html">FAQ</a></li>
+         <li><a href="signup.html">Register</a></li>
+      </ul>
+   </nav>
+   <nav id="mobile">
+      <a href="#" id="navmobile"><img src="../picture/expansion_icon.png" alt="" /></a>
+      <ul>
+         <li><a href="login.html">Game Catalogue</a></li>
+         <li><a href="encyclopedia.html">Game Encyclopedia</a></li>
+         <li><a href="update.html">Latest News</a></li>
+         <li><a href="about_us.html">About Us</a></li>
+         <li><a href="faq.html">FAQ</a></li>
+         <li><a href="signup.html">Register</a></li>
+      </ul>
+   </nav>
+   <section>
+         <div>
+            <h1>RATE FOR US!</h1>
+            <p>In order to help us review and continuously improve our therapy services, we would love to hear your feedback about your therapy experience with TARC RETRO GAME.</p>
+            <form class="feedbackForm" action="homepage.html"> 
+               <div id="stardiv">
+                     <span class="star" id="star1" onclick="starfunction1();ableSubmit()">&#9734</span>
+                     <span class="star" id="star2" onclick="starfunction2();ableSubmit()">&#9734</span>
+                     <span class="star" id="star3" onclick="starfunction3();ableSubmit()">&#9734</span>
+                     <span class="star" id="star4" onclick="starfunction4();ableSubmit()">&#9734</span>
+                     <span class="star" id="star5" onclick="starfunction5();ableSubmit()">&#9734</span>
+               </div>
+               <textarea id="textarea" title="hello" maxlength="300" placeholder="Please tell us about your experience..." onchange="countWord()"></textarea>
+               <br>
+               <span id="textCount">0/300</span>
+               <br>
+               <input id="submitBtn3" type="submit" value="Send feedback" onclick="thanks();" disabled>
+            </form> 
+         </div>
+   </section>
+   <footer>
+      <div>
+         <h3>Service</h3>
+      <ul>
+         <li><a href="login.html"><p> Game Catalogue</p></a></li>
+         <li><a href="encyclopedia.html"><p>Game Encyclopedia</p></a></li>
+         <li><a href="login.html"><p>Cart</p></a></li>
+         <li><a href="cusFeedback.html">Customer Feedback</a></li>
+      </ul>
+      </div>
+      <div>
+         <h3>Organization</h3>
+         <ul>
+            <li><a href="faq.html"><p>FAQ</p></a></li>
+            <li><a href="update.html"><p>Latest News</p></li>
+            <li><a href="about_us.html"> <p>About Us</p></a></li>
+         </ul>
+      </div>
+      <div>
+         <h3>Follow Us</h3>
+         <div id="followUs">
+            <ul>
+               <li><a href=""><img src="../picture/facebook.png" alt=""></a></li>
+               <li><a href=""><img src="../picture/instagram.png" alt=""></a></li>
+               <li><a href=""><img src="../picture/telegram.png" alt=""></a></li>
+               <li><a href=""><img src="../picture/map.png" alt=""></a></li>
+               <li><a href=""><img src="../picture/whatsapp.png" alt=""></a></li>
+               <li><a href=""><img src="../picture/twitter.png" alt=""></a></li>
+            </ul>   
+         </div>
+      </div>
+      <script src="../javascript/cusFeedback.js"></script>
+   </footer>
+</div>
+</body>
+</html>

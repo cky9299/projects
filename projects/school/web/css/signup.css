@@ -1,0 +1,247 @@
+/* to do animation when load this page */
+@keyframes slide-up{
+    0%{
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+/* set up format */
+section div div{
+    border: none;
+    width: 90%;
+    height: auto;
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: none;
+    animation: slide-up 1.5s ease;
+
+} 
+
+/* the upper part of the form */
+#logo{
+    width: 700px;
+    text-align: center;
+    color: #fffffa;
+    background-color: rgb(17, 25, 53);
+    padding: 5px;
+    border-radius: 50px 50px 0px 0px;
+    border: 2px #6688AA solid;
+    box-shadow: 0px 0px 30px rgba(5, 5, 5, 0.6);
+    margin-bottom: 0px;
+}
+
+/* the bottom part of the form */
+#details{
+    width: 700px;
+    padding: 5px;
+    padding-bottom: 100px;
+    color: #fffffa;
+    background-color: rgb(17, 25, 53);
+    border: 2px #6688AA solid;
+    box-shadow: 0px 0px 30px rgba(5, 5, 5, 0.6);
+    margin-top: 0px;
+}
+
+
+/* input box setting */
+.signup div{
+    margin: 30px;
+}
+.signup div input+img{
+    position: relative;
+    top: 3px;
+    margin-left: 5px;
+    display: none;
+}
+.signup div:first-child input, .signup div:first-child img{
+    position: relative;
+    left: 150px;
+}
+
+.signup input{
+    width: 180px;
+    height: 30px;
+    border: 2px gray solid;
+    border-radius: 5px;
+}
+/* error message */
+#signal{
+    font-size: 11px;
+    color: red;
+    position: relative;
+    left: 45px;
+    top: 27px;
+}
+
+.signup div:nth-child(2) input, .signup div:nth-child(2) img{
+    position: relative;
+    left: 122px;
+}
+.signup div:nth-child(3) input, .signup div:nth-child(3) img{
+    position: relative;
+    left: 64px;
+}
+.signup div:nth-child(4) input, .signup div:nth-child(4) img{
+    position: relative;
+    left: 152px;
+}
+
+.signup div:nth-child(5) input, .signup div:nth-child(5) img{
+    position: relative;
+    left: 146px;
+}
+
+/* for the separated line */
+.signup hr{
+    background-color:#6688AA;
+    height: 1px;
+    border: none;
+    width: 100%;
+}
+.mobile{
+    display: none;
+}
+
+
+/* date of birth */
+.signup select{
+    position: relative;
+    left: 106px;
+    width: 70px;
+    height: 30px;
+    margin-right: 3px;
+    border-radius: 5px ;
+    border: 2px gray solid;
+    top: 100%;
+}
+
+.signup div:nth-child(7) img{
+    position: relative;
+    left: 107px;
+    top: 3px;
+    display: none;
+}
+
+
+/* checkbox */
+.signup div:nth-child(8){
+    position: relative;
+    top: 150px;
+    font-size: 13px;
+}
+
+.signup div input[type="checkbox"]{
+    width: 14px;
+    height: 14px;
+    position: relative;
+}
+
+
+/* Submit & Clear */
+.signup input[type="submit"], .signup input[type="reset"]{
+    position: relative;
+    left: 420px;
+    top: 170px;
+    width: 100px;
+    height: 45px; 
+    border: 2px #6688AA solid;
+    border-radius: 15px;
+    background-image: linear-gradient(#3fa2ec, #00529f);
+    transition: transform .2s;
+
+}
+
+.signup input[type="submit"]:hover, .signup input[type="reset"]:hover{
+    background-image: linear-gradient(#89cdff, #1998f6);    
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.signup input[type="submit"]:disabled{
+    cursor: not-allowed;
+}
+
+.signup div input:valid, #day:valid, #month:valid, #year:valid{
+    background-color: rgb(228, 253, 235);
+}
+
+.signup div:nth-child(3) input:valid{
+    background-color: white;
+}
+
+
+
+/* profile picture */
+.signup div:last-child{
+    position: relative;
+    bottom: 520px;
+    left: 290px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.signup div:last-child input{
+    display: none;
+}
+
+.signup div:last-child label{
+    position: relative;
+    right: 85px;
+    top: 20px;
+    cursor: pointer;
+}
+@media only screen and (max-width:450px){
+    #logo, #details{
+        width:300px;
+    }
+   .signup div:nth-child(2) input, .signup div:nth-child(2) img{
+        position: relative;
+        left: 0;
+    }
+    .signup div:nth-child(3) input, .signup div:nth-child(3) img{
+        position: relative;
+        left: 0;
+    }
+    .signup div:nth-child(4) input, .signup div:nth-child(4) img{
+        position: relative;
+        left: 0;
+    }
+
+    .signup div:nth-child(5) input, .signup div:nth-child(5) img{
+        position: relative;
+        left: 0;
+    }
+    .signup div:first-child input, .signup div:first-child img{
+        position: relative;
+        left: 0;
+    }
+    .signup select{
+        position: static;
+        width: 70px;
+        height: 30px;
+        margin-right: 3px;
+        border-radius: 5px ;
+        border: 2px gray solid;
+        top: 100%;
+    }
+    .signup input[type="submit"], .signup input[type="reset"]{
+        position: relative;
+        left: 20px;
+        top: 170px;    
+    }
+    .signup div:last-child{
+        position: relative;
+        bottom: 160px;
+        left: 0px;
+        font-size: 14px;
+        text-align: center;
+    }
+    .mobile{
+        display: block;
+    }
+ }

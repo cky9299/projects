@@ -1,0 +1,249 @@
+<!doctype html>
+<html>
+<head>
+   <meta charset="utf-8" />
+   <title>TARC Retro Shop</title>
+   <link href="../css/base.css" rel="stylesheet" />
+   <style>
+       @media only screen and (min-width:1000px) {
+           nav#mobile ul {
+               display: none;
+           }
+       }
+       /*Mobile and tablet*/
+       @media only screen and (max-width:999px) {
+           #main {
+               width: 100%;
+               min-width: 400px;
+           }
+
+           #navmobile {
+               display: block;
+           }
+
+           footer {
+               border: 2px solid #6688AA;
+               display: flex;
+               list-style-type: none;
+               background-image: linear-gradient(#fffffa, #9b9b9b);
+               flex-flow: column wrap;
+           }
+
+               footer > div {
+                   width: 100%;
+                   text-align: center;
+                   height: 200px;
+               }
+
+           nav#laptop {
+               display: none;
+           }
+
+           nav#mobile ul {
+               display: none;
+           }
+
+           a#navmobile:hover + ul, nav#mobile > ul:hover {
+               display: block;
+           }
+       }
+      details {
+          background-color: floralwhite;
+          margin-left: 10px;
+          margin-right: 10px;
+      }
+
+      summary {
+          background-color: skyblue;
+          font-size: 22px;
+          cursor: pointer;
+          color:white;
+      }
+
+      details {
+          /*flex: 0 0 100px;*/
+          /*width: 40%;*/
+          font-size: 18px;
+          margin-top: 1%;
+          border: 2px solid #6688AA;
+      }
+
+      .collapse, .expand {
+         border-radius: 25px;
+          padding:5px;
+          font-size: 20px;
+          border: 2px solid #6688AA;
+
+      }
+      section div{
+         padding: 10px;
+      }
+      details p {
+          margin-left: 10px;
+          margin-right: 10px;
+      }
+
+      .faqhead {
+          border: none;
+          margin-left: 10px;
+          text-shadow: 2px 2px 4px #9b9b9b;
+          margin-left:auto ;
+          margin-right: auto;
+          text-align: center;
+          background-image: none;
+          height: 60px;
+
+      }
+      .expand{
+         margin-left: 10px;
+
+      }
+  </style>
+</head>
+<body>
+   <div id="main">
+   <header>
+    <div id="middle"><a href="homepage.html"><img src="../picture/logo.png" alt="logo"></a></div>
+    <div id="right">
+       <a href="login.html"><img src="../picture/cart.png" alt="cart" id="second"></a>
+       <a href="cusFeedback.html"><img src="../picture/customer_feedback.png" alt="Customer feedback" id="most"></a>
+    </div>
+  </header>
+   <nav id="laptop">
+    <ul>
+       <li><a href="login.html">Game Catalogue</a></li>
+       <li><a href="encyclopedia.html">Game Encyclopedia</a></li>
+       <li><a href="update.html">Latest News</a></li>
+       <li><a href="about_us.html">About Us</a></li>
+       <li><a href="faq.html">FAQ</a></li>
+       <li><a href="signup.html">Register</a></li>
+    </ul>
+ </nav>
+ <nav id="mobile">
+    <a href="#" id="navmobile"><img src="../picture/expansion_icon.png" alt="" /></a>
+    <ul>
+       <li><a href="login.html">Game Catalogue</a></li>
+       <li><a href="encyclopedia.html">Game Encyclopedia</a></li>
+       <li><a href="update.html">Latest News</a></li>
+       <li><a href="about_us.html">About Us</a></li>
+       <li><a href="faq.html">FAQ</a></li>
+       <li><a href="signup.html">Register</a></li>
+    </ul>
+ </nav>
+    <section>
+      <div>
+         <div class="faqhead">
+            <h1>FAQ</h1>
+         </div>            <button class="expand">+ Expand All</button>&nbsp;
+            <button class="collapse">- Collapse All</button>
+
+            <details>
+                <summary>
+                    What is TARC Retro Games?
+                </summary>
+                <p>
+                    TARC Retro Games provides a platform to introduce classic games or retro games to people who are interested in those games, and make more people familiar with the old games, and also provide the games to those who want to play them. We enable customers to buy games that they like after browsing the game encyclopedia/catalogue to find out more about old games.
+                </p>
+            </details>
+
+            <details>
+                <summary>
+                    How can I register?
+                </summary>
+                <p>
+                    Click the register button. You will be redirected to a form where you have to fill out your personal details. Afterwards, click submit to become a member!
+                </p>
+            </details>
+
+            <details>
+                <summary>
+                    How can I buy items?
+                </summary>
+                <p>
+                    When browsing the products, click add to cart. Navigate to cart and click checkout. You will be redirected to the payment website where you could enter your credit card details.
+                </p>
+            </details>
+
+            <details>
+                <summary>
+                    How can I contact you?
+                </summary>
+                <p>
+                    We are located at Kampus Utama, Jalan Genting Kelang, 53300 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur.<br />
+                    email: <a href="mailto:tarcretrogames@gmail.com">tarcretrogames@gmail.com</a> <br />
+                    phone: <a href="tel:+60192413657">+60192413657</a>
+                </p>
+            </details>
+
+            <details>
+                <summary>
+                    What products are available?
+                </summary>
+                <p>
+                    We offer a wide array of games ranging from arcade, retro to modern games spanning multiple decades. Do visit our product website to find out more!
+                </p>
+            </details>
+      </div>
+      <script>
+         //document.querySelectorAll('.expandable').forEach(addEventListener('click', function () { alert('WELL DONE WOULD U LIKE TO JOIN OUR CLAN') }));
+         /*
+                document.querySelector('.expandable').addEventListener('click', () =>
+                {
+                    document.getElementsByTagName('details').forEach(SetAttr);
+                });*/
+         //document.getElementsByTagName('details')[0].setAttribute('open','');
+         document.querySelector('.expand').addEventListener('click', () =>
+         {
+             Details = document.getElementsByTagName('details');
+             for (var i = 0; i < Details.length; i++)
+             {
+                 Details[i].setAttribute('open', '');
+             }
+         });
+
+         document.querySelector('.collapse').addEventListener('click', () =>
+         {
+             Details = document.getElementsByTagName('details');
+             for (var i = 0; i < Details.length; i++)
+             {
+                 Details[i].removeAttribute('open');
+             }
+         });
+     </script>
+    </section>
+    <footer>
+        <div>
+           <h3>Service</h3>
+        <ul>
+           <li><a href="login.html"><p> Game Catalogue</p></a></li>
+           <li><a href="encyclopedia.html"><p>Game Encyclopedia</p></a></li>
+           <li><a href="login.html"><p>Cart</p></a></li>
+           <li><a href="cusFeedback.html">Customer Feedback</a></li>
+        </ul>
+        </div>
+        <div>
+           <h3>Organization</h3>
+           <ul>
+              <li><a href="faq.html"><p>FAQ</p></a></li>
+              <li><a href="update.html"><p>Latest News</p></li>
+              <li><a href="about_us.html"> <p>About Us</p></a></li>
+           </ul>
+        </div>
+        <div>
+           <h3>Follow Us</h3>
+           <div id="followUs">
+              <ul>
+                 <li><a href=""><img src="../picture/facebook.png" alt=""></a></li>
+                 <li><a href=""><img src="../picture/instagram.png" alt=""></a></li>
+                 <li><a href=""><img src="../picture/telegram.png" alt=""></a></li>
+                 <li><a href=""><img src="../picture/map.png" alt=""></a></li>
+                 <li><a href=""><img src="../picture/whatsapp.png" alt=""></a></li>
+                 <li><a href=""><img src="../picture/twitter.png" alt=""></a></li>
+              </ul>   
+           </div>
+        </div>
+     </footer>
+</div>
+</body>
+</html>
+

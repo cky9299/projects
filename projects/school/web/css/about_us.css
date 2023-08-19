@@ -1,0 +1,42 @@
+section > div{
+    padding: 3%;
+}
+section h3{
+    padding: 5px;
+    width: 50%;
+    border-top: 2px solid #6688AA;
+}
+section table{
+    width: 100%;
+    background-color:#FFFFFA;
+    border: 2px solid #6688AA;
+    border-collapse: collapse;
+}
+th,td{
+    width: 33.3333%;
+    padding: 8px;
+    border: 2px solid #6688AA;
+}
+table img{
+    width: 20%;
+    min-width: 100px;
+}
+#GoToNextPage, #GoToPreviousPage{
+    border-radius: 15px;
+    border: 2px solid #6688AA;
+    width: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    background-image: linear-gradient(#3fa2ec, #00529f);
+    transition: transform .2s;
+}#GoToNextPage:hover, #GoToPreviousPage:hover{
+    background-image: linear-gradient(#89cdff, #1998f6);    
+    transform: scale(1.1);
+}
+@media only screen and (max-width:450px){
+    #GoToNextPage, #GoToPreviousPage{
+        width: 30%;
+    }
+    
+}

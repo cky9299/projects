@@ -1,0 +1,179 @@
+<!doctype html>
+<html>
+<head>
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+   <title>TARC Retro Shop</title>
+   <link href="../css/base.css" rel="stylesheet" />
+   <style>
+       @media only screen and (min-width:1000px) {
+           nav#mobile ul {
+               display: none;
+           }
+       }
+       /*Mobile and tablet*/
+       @media only screen and (max-width:999px) {
+           #main {
+               width: 100%;
+               min-width: 400px;
+           }
+
+           #navmobile {
+               display: block;
+           }
+
+           footer {
+               border: 2px solid #6688AA;
+               display: flex;
+               list-style-type: none;
+               background-image: linear-gradient(#fffffa, #9b9b9b);
+               flex-flow: column wrap;
+           }
+
+               footer > div {
+                   width: 100%;
+                   text-align: center;
+                   height: 200px;
+               }
+
+           nav#laptop {
+               display: none;
+           }
+
+           nav#mobile ul {
+               display: none;
+           }
+
+           a#navmobile:hover + ul, nav#mobile > ul:hover {
+               display: block;
+           }
+       }
+      @keyframes pss {
+          to {
+              color: skyblue;
+          }
+      }
+
+      .ps {
+          animation-name: pss;
+          animation-duration: 2s;
+          animation-iteration-count: infinite;
+          animation-direction: alternate;
+          animation-timing-function: linear;
+      }
+
+      @keyframes bounce {
+          0%, 20%, 50%, 80%, 100% {
+              transform: translateY(0);
+          }
+
+          40% {
+              transform: translateY(-30px);
+          }
+
+          60% {
+              transform: translateY(-15px);
+          }
+      }
+
+      .ty {
+          animation-name: bounce;
+          animation-duration: 2s;
+          /*animation-iteration-count: infinite;*/
+          animation-direction: alternate;
+          animation-timing-function: linear;
+          animation-fill-mode: both;
+      }
+
+      .ps, .ty, button {
+          margin-left: 10px;
+      }
+      section > div{
+         padding: 30px;
+      }
+      button{
+         border-radius: 15px;
+         font-size: 16px;
+         transition: transform .2s;
+         padding: 10px;
+      }
+      button:hover{
+         transform: scale(1.2);
+      }
+  </style>
+</head>
+<body>
+   <div id="main">
+      <header>
+         <div id="middle"><a href="homepage.html"><img src="../picture/logo.png" alt="logo"></a></div>
+         <div id="right">
+            <a href="login.html"><img src="../picture/cart.png" alt="cart" id="second"></a>
+            <a href="cusFeedback.html"><img src="../picture/customer_feedback.png" alt="Customer feedback" id="most"></a>
+         </div>
+      </header>
+      <nav id="laptop">
+         <ul>
+            <li><a href="login.html">Game Catalogue</a></li>
+            <li><a href="encyclopedia.html">Game Encyclopedia</a></li>
+            <li><a href="update.html">Latest News</a></li>
+            <li><a href="about_us.html">About Us</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="signup.html">Register</a></li>
+         </ul>
+      </nav>
+      <nav id="mobile">
+         <a href="#" id="navmobile"><img src="../picture/expansion_icon.png" alt="" /></a>
+         <ul>
+            <li><a href="login.html">Game Catalogue</a></li>
+            <li><a href="encyclopedia.html">Game Encyclopedia</a></li>
+            <li><a href="update.html">Latest News</a></li>
+            <li><a href="about_us.html">About Us</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="signup.html">Register</a></li>
+         </ul>
+      </nav>
+   <section>
+      <div>
+         <h1 class="ps">Payment Successful!</h1>
+         <h3 class="ty">Thank you! Please come again :)</h3>
+         <br/>
+         <button><a href="homepage.html">Home</a></button>
+         <button><a href="catalogue.html">Other products</a></button>
+      </div>
+   </section>
+   <footer>
+      <div>
+         <h3>Service</h3>
+      <ul>
+         <li><a href="login.html"><p> Game Catalogue</p></a></li>
+         <li><a href="encyclopedia.html"><p>Game Encyclopedia</p></a></li>
+         <li><a href="login.html"><p>Cart</p></a></li>
+         <li><a href="cusFeedback.html">Customer Feedback</a></li>
+      </ul>
+      </div>
+      <div>
+         <h3>Organization</h3>
+         <ul>
+            <li><a href="faq.html"><p>FAQ</p></a></li>
+            <li><a href="update.html"><p>Latest News</p></li>
+            <li><a href="about_us.html"> <p>About Us</p></a></li>
+         </ul>
+      </div>
+      <div>
+         <h3>Follow Us</h3>
+         <div id="followUs">
+            <ul>
+               <li><a href=""><img src="../picture/facebook.png" alt=""></a></li>
+               <li><a href=""><img src="../picture/instagram.png" alt=""></a></li>
+               <li><a href=""><img src="../picture/telegram.png" alt=""></a></li>
+               <li><a href=""><img src="../picture/map.png" alt=""></a></li>
+               <li><a href=""><img src="../picture/whatsapp.png" alt=""></a></li>
+               <li><a href=""><img src="../picture/twitter.png" alt=""></a></li>
+            </ul>   
+         </div>
+      </div>
+   </footer>
+</div>
+</body>
+</html>
+

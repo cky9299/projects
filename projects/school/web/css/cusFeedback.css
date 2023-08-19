@@ -1,0 +1,123 @@
+/* to do animation when load this page */
+@keyframes slide-up{
+    0%{
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+/* set up format */
+section div div{
+    border: none;
+    width: 90%;
+    height: auto;
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: none;
+    animation: slide-up 1.5s ease;
+
+} 
+
+section > div{
+    width: 700px;
+    text-align: center;
+    background-color: rgb(17, 25, 53);
+    padding: 10px 20px 50px 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 30px rgba(5, 5, 5, 0.6);
+} 
+
+
+/* title */
+section > div > h1{
+    margin: 30px;
+}
+
+section > div > p{
+    font-size: 13px;
+}
+
+/* star logo */
+#stardiv span{
+    cursor: pointer;
+    background-image: none;
+    font-size: 40px;
+    color: yellow;
+    background-color: unset;
+    border: 0px;
+}
+
+/* text area css */
+textarea{
+    width: 400px;
+    height: 200px;
+    margin-top: 20px;
+    border: 2px #6688AA solid;
+    border-radius: 10px;
+    resize: none;
+    font-size: 14px;
+    font-weight: 550;
+    word-wrap: break-word;
+    line-height: 30px;
+    letter-spacing: 2px;
+}
+
+textarea::-webkit-scrollbar{
+    width: 4px;
+}
+
+textarea::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 10px white;
+}
+
+textarea::-webkit-scrollbar-thumb{
+    background-color: rgb(6, 0, 176);
+}
+
+/* amount of letter typed */
+#textCount{
+    font-size: 12px;
+    margin-top: 5px;
+    left: 170px;
+    top: -25px;
+}
+
+/* submit button css */
+#submitBtn3{
+    margin-top: 10px;
+    margin-left: 270px; 
+    width: 140px;
+    height: 45px; 
+    font-weight: 800;
+    border: 2px solid  #6688AA;
+    border-radius: 15px;
+    background-image: linear-gradient(#3fa2ec, #00529f);
+    transition: transform .2s;
+
+}
+
+#submitBtn3:hover{
+    background-image: linear-gradient(#89cdff, #1998f6);    
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+#submitBtn3:disabled{
+    cursor: not-allowed;
+}
+@media only screen and (max-width:450px){
+   section > div{
+        width: 400px;
+   }
+   textarea{
+        width: 350px;
+   }
+   #submitBtn3{
+    margin-left: 100px; 
+}
+}
+
