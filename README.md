@@ -5,6 +5,7 @@ PERSONAL PROJECTS
 3.	Written Python Artificial Intelligence (AI) program that plots a best fit line (best fit.py) based on (randomly) given coordinates.
 4.	Implemented smart contracts that function as a lottery (lottery.sol) and a fundraiser (FundMe.sol) respectively.
 5.	Developed a program that automatically detects any change in price of crypto and logs the price details using REST API.
+6.	Developed a script (claimLoginRewards.py) that automatically claims daily login rewards from a website.
 
 SCHOOL PROJECTS
 ===============
